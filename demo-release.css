@@ -1,0 +1,15 @@
+.demo-view:has(#lesson-panel) .preview-controls{grid-template-columns:minmax(180px,1.5fr) minmax(120px,1fr) auto}
+.demo-view #snapshot{min-height:40px;color:var(--green)}
+.demo-view #environment-source{font-size:11px;text-decoration:underline}
+.demo-view .loading{padding:24px;text-align:center;align-content:center;gap:12px;color:#315844}
+.demo-view .preview-controls input[type=range]{height:30px;margin:0}
+.demo-view #camera-view{min-height:36px}
+.demo-view .motion-actions button{min-height:36px}
+.demo-view .lesson-screen-text{pointer-events:none}
+.demo-view .demo-brand span{color:#52664d}
+.demo-view .motion-actions button,.demo-view .viewport-toolbar .quiet,.demo-view #camera-view,
+.demo-view .preview-controls select,.demo-view .preview-controls label,.demo-view .viewport-label,
+.demo-view #action-status,.demo-view #snapshot{font-size:12px}
+.demo-view ::selection{background:#c5d8c6;color:#193d29}
+@media(max-width:650px){.demo-view:has(#lesson-panel) .preview-controls{grid-template-columns:1fr 1fr}.demo-view:has(#lesson-panel) .preview-controls>div:last-child{grid-column:auto}.demo-view #snapshot{grid-column:1/-1;text-align:right}.demo-view .motion-actions button{min-height:44px}.demo-view #camera-view{margin-left:0;max-width:70%}}
+@media(prefers-reduced-motion:reduce){.demo-view button{transition:none}}

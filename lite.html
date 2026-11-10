@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN" data-render-mode="lite">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>亚龙实验箱 · 轻量版</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="style.css?rev=20261110-physics">
+<link rel="stylesheet" href="preview-layout.css?rev=20261110-physics">
+<link rel="stylesheet" href="demo.css?rev=20261110-physics">
+<link rel="stylesheet" href="lesson-panel.css?rev=20261110-physics">
+<link rel="stylesheet" href="demo-release.css?rev=20261110-physics">
+<script type="importmap">{
+  "imports": {
+    "three": "./vendor/three/build/three.webgpu.js",
+    "three/webgpu": "./vendor/three/build/three.webgpu.js",
+    "three/tsl": "./vendor/three/build/three.tsl.js",
+    "three/addons/": "./vendor/three/examples/jsm/",
+    "three/examples/jsm/": "./vendor/three/examples/jsm/",
+    "./angle-map.js": "./angle-map.js?rev=20261110-physics",
+    "./button-detail.js": "./button-detail.js?rev=20261110-physics",
+    "./demo-app.js": "./demo-app.js?rev=20261110-physics",
+    "./explode-preview.js": "./explode-preview.js?rev=20261110-physics",
+    "./finish-calibration.js": "./finish-calibration.js?rev=20261110-physics",
+    "./laboratory-stage.js": "./laboratory-stage.js?rev=20261110-physics",
+    "./lesson-panel.js": "./lesson-panel.js?rev=20261110-physics",
+    "./lesson-program.js": "./lesson-program.js?rev=20261110-physics",
+    "./lesson-runner.js": "./lesson-runner.js?rev=20261110-physics",
+    "./lesson-screen.js": "./lesson-screen.js?rev=20261110-physics",
+    "./levels.js": "./levels.js?rev=20261110-physics",
+    "./panel-art.js": "./panel-art.js?rev=20261110-physics",
+    "./part-labels.js": "./part-labels.js?rev=20261110-physics",
+    "./photographic-environments.js": "./photographic-environments.js?rev=20261110-physics",
+    "./render-mode.js": "./render-mode.js?rev=20261110-physics",
+    "./selection-indicator.js": "./selection-indicator.js?rev=20261110-physics",
+    "./self-occlusion.js": "./self-occlusion.js?rev=20261110-physics",
+    "./servo-labels.js": "./servo-labels.js?rev=20261110-physics",
+    "./studio-post.js": "./studio-post.js?rev=20261110-physics",
+    "./studio-stage.js": "./studio-stage.js?rev=20261110-physics",
+    "./surface-detail.js": "./surface-detail.js?rev=20261110-physics",
+    "./teaching-bundle.js": "./teaching-bundle.js?rev=20261110-physics",
+    "./wood-texture.js": "./wood-texture.js?rev=20261110-physics"
+  }
+}</script>
+</head>
+<body class="demo-view">
+<div class="demo-brand">YL–A1 <span>实验箱</span><a class="quality-link" href="index.html">完整版</a><button id="fullscreen" type="button">全屏</button></div>
+<aside id="lesson-panel" aria-label="关卡"></aside>
+<main aria-label="实验箱演示">
+ <section id="page-materials" class="page active"><div class="material-layout"><div class="preview-column">
+  <div class="viewport-toolbar">
+   <div class="motion-actions"><button id="arm-start" disabled>① 机械臂搬运</button><button id="gimbal-start" disabled>② 云台升起</button><button id="reset" disabled>③ 复位</button><button id="explode-start" disabled>④ 爆炸拆解</button></div>
+   <select id="camera-view" aria-label="演示视角" disabled><option value="teaching">教学 · 屏幕与机械臂</option><option value="wide">远景 · 整箱</option><option value="medium">中景 · 功能动作</option><option value="close">近景 · 材质细节</option><option value="detail">材质近景</option><option value="arm">机械臂</option><option value="gimbal">云台</option><option value="top">俯视</option><option value="all">整箱</option></select>
+   <button id="reset-view" class="quiet" disabled>重置视角</button>
+  </div>
+  <div id="viewport"><div id="action-status" role="status" aria-live="polite">正在加载演示动作…</div><div class="viewport-label">实拍铸造车间</div><div id="loading" class="loading" role="status">正在准备实验箱…</div></div>
+  <div class="preview-controls">
+   <div><label for="environment">场景与光照 <a id="environment-source" href="https://polyhaven.com/a/industrial_workshop_foundry" target="_blank" rel="noopener">Poly Haven</a></label><select id="environment"><option value="foundry">实拍铸造车间 · 金属反射</option><option value="workshop">实拍车间 · 大窗日光</option><option value="metalStudio">实拍摄影棚 · 柔光箱反射</option><option value="light">中性柔光棚</option><option value="dark">深灰摄影棚 · 轮廓光</option><option value="warm">暖色摄影棚</option></select></div>
+   <div><label for="environment-rotation">光线方向 <output id="environment-angle">0°</output></label><input id="environment-rotation" type="range" min="0" max="360" step="1" value="0"></div>
+   <button id="snapshot" type="button" class="quiet" disabled>保存画面</button>
+  </div>
+ </div></div></section>
+</main>
+<select id="model" hidden aria-label="模型"><option value="all">实验箱</option></select><select id="target" hidden aria-label="当前零件"><option value=""></option></select>
+<script src="demo-start.js?rev=20261110-physics"></script>
+</body></html>

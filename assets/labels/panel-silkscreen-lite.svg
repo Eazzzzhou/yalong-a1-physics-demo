@@ -1,0 +1,237 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2048" height="1450" viewBox="0 0 610 432">
+<!-- Hand-redrawn from user photos 02/04; no embedded images. -->
+<path d="M17,6 L135,6" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="17" cy="6" r="1.45" fill="#101410"/>
+<circle cx="135" cy="6" r="1.45" fill="#101410"/>
+<path d="M9,143 L9,14" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="9" cy="143" r="1.45" fill="#101410"/>
+<circle cx="9" cy="14" r="1.45" fill="#101410"/>
+<path d="M143,143 L143,14" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="143" cy="143" r="1.45" fill="#101410"/>
+<circle cx="143" cy="14" r="1.45" fill="#101410"/>
+<path d="M11,145 L15,149" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="11" cy="145" r="1.25" fill="#101410"/>
+<circle cx="15" cy="149" r="1.25" fill="#101410"/>
+<path d="M11,12 L15,8" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="11" cy="12" r="1.25" fill="#101410"/>
+<circle cx="15" cy="8" r="1.25" fill="#101410"/>
+<path d="M141,145 L137,149" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="141" cy="145" r="1.25" fill="#101410"/>
+<circle cx="137" cy="149" r="1.25" fill="#101410"/>
+<path d="M141,12 L137,8" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="141" cy="12" r="1.25" fill="#101410"/>
+<circle cx="137" cy="8" r="1.25" fill="#101410"/>
+<path d="M17,151 L135,151" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="13.5" y="69" width="55" height="52" rx="5" fill="none" stroke="#101410" stroke-width="0.85"/>
+<rect x="13.5" y="15" width="55" height="52" rx="5" fill="none" stroke="#101410" stroke-width="0.85"/>
+<rect x="70.5" y="69" width="55" height="52" rx="5" fill="none" stroke="#101410" stroke-width="0.85"/>
+<rect x="70.5" y="15" width="55" height="52" rx="5" fill="none" stroke="#101410" stroke-width="0.85"/>
+<path d="M167,6 L323,6" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="167" cy="6" r="1.45" fill="#101410"/>
+<circle cx="323" cy="6" r="1.45" fill="#101410"/>
+<path d="M159,143 L159,14" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="159" cy="143" r="1.45" fill="#101410"/>
+<circle cx="159" cy="14" r="1.45" fill="#101410"/>
+<path d="M331,143 L331,14" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="331" cy="143" r="1.45" fill="#101410"/>
+<circle cx="331" cy="14" r="1.45" fill="#101410"/>
+<path d="M161,145 L165,149" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="161" cy="145" r="1.25" fill="#101410"/>
+<circle cx="165" cy="149" r="1.25" fill="#101410"/>
+<path d="M161,12 L165,8" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="161" cy="12" r="1.25" fill="#101410"/>
+<circle cx="165" cy="8" r="1.25" fill="#101410"/>
+<path d="M329,145 L325,149" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="329" cy="145" r="1.25" fill="#101410"/>
+<circle cx="325" cy="149" r="1.25" fill="#101410"/>
+<path d="M329,12 L325,8" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="329" cy="12" r="1.25" fill="#101410"/>
+<circle cx="325" cy="8" r="1.25" fill="#101410"/>
+<path d="M167,151 L209.8,151" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M290.2,151 L323,151" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M219.8,150 L223.8,145" fill="none" stroke="#101410" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M216.8,150 L220.8,145" fill="none" stroke="#101410" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M213.8,150 L217.8,145" fill="none" stroke="#101410" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M276.2,150 L280.2,145" fill="none" stroke="#101410" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M279.2,150 L283.2,145" fill="none" stroke="#101410" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M282.2,150 L286.2,145" fill="none" stroke="#101410" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="250" y="147.2" font-family="'Microsoft YaHei', 'Noto Sans CJK SC', 'PingFang SC', sans-serif" font-size="8.4" font-weight="400" text-anchor="middle" dominant-baseline="central" transform="rotate(0 250 147.2)" fill="#101410">控制与处理系统</text>
+<path d="M353,6 L474,6" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="353" cy="6" r="1.45" fill="#101410"/>
+<circle cx="474" cy="6" r="1.45" fill="#101410"/>
+<path d="M345,143 L345,14" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="345" cy="143" r="1.45" fill="#101410"/>
+<circle cx="345" cy="14" r="1.45" fill="#101410"/>
+<path d="M482,143 L482,14" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="482" cy="143" r="1.45" fill="#101410"/>
+<circle cx="482" cy="14" r="1.45" fill="#101410"/>
+<path d="M347,145 L351,149" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="347" cy="145" r="1.25" fill="#101410"/>
+<circle cx="351" cy="149" r="1.25" fill="#101410"/>
+<path d="M347,12 L351,8" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="347" cy="12" r="1.25" fill="#101410"/>
+<circle cx="351" cy="8" r="1.25" fill="#101410"/>
+<path d="M480,145 L476,149" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="480" cy="145" r="1.25" fill="#101410"/>
+<circle cx="476" cy="149" r="1.25" fill="#101410"/>
+<path d="M480,12 L476,8" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="480" cy="12" r="1.25" fill="#101410"/>
+<circle cx="476" cy="8" r="1.25" fill="#101410"/>
+<path d="M353,151 L366.1,151" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M460.9,151 L474,151" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M376.1,150 L380.1,145" fill="none" stroke="#101410" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M373.1,150 L377.1,145" fill="none" stroke="#101410" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M370.1,150 L374.1,145" fill="none" stroke="#101410" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M446.9,150 L450.9,145" fill="none" stroke="#101410" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M449.9,150 L453.9,145" fill="none" stroke="#101410" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M452.9,150 L456.9,145" fill="none" stroke="#101410" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="413.5" y="147.2" font-family="'Microsoft YaHei', 'Noto Sans CJK SC', 'PingFang SC', sans-serif" font-size="8.4" font-weight="400" text-anchor="middle" dominant-baseline="central" transform="rotate(0 413.5 147.2)" fill="#101410">3D相机与云台系统</text>
+<path d="M499,6 L599,6" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="499" cy="6" r="1.45" fill="#101410"/>
+<circle cx="599" cy="6" r="1.45" fill="#101410"/>
+<path d="M491,143 L491,14" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="491" cy="143" r="1.45" fill="#101410"/>
+<circle cx="491" cy="14" r="1.45" fill="#101410"/>
+<path d="M607,143 L607,14" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="607" cy="143" r="1.45" fill="#101410"/>
+<circle cx="607" cy="14" r="1.45" fill="#101410"/>
+<path d="M493,145 L497,149" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="493" cy="145" r="1.25" fill="#101410"/>
+<circle cx="497" cy="149" r="1.25" fill="#101410"/>
+<path d="M493,12 L497,8" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="493" cy="12" r="1.25" fill="#101410"/>
+<circle cx="497" cy="8" r="1.25" fill="#101410"/>
+<path d="M605,145 L601,149" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="605" cy="145" r="1.25" fill="#101410"/>
+<circle cx="601" cy="149" r="1.25" fill="#101410"/>
+<path d="M605,12 L601,8" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="605" cy="12" r="1.25" fill="#101410"/>
+<circle cx="601" cy="8" r="1.25" fill="#101410"/>
+<path d="M499,151 L512.4,151" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M585.6,151 L599,151" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M522.4,150 L526.4,145" fill="none" stroke="#101410" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M519.4,150 L523.4,145" fill="none" stroke="#101410" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M516.4,150 L520.4,145" fill="none" stroke="#101410" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M571.6,150 L575.6,145" fill="none" stroke="#101410" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M574.6,150 L578.6,145" fill="none" stroke="#101410" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M577.6,150 L581.6,145" fill="none" stroke="#101410" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="549" y="147.2" font-family="'Microsoft YaHei', 'Noto Sans CJK SC', 'PingFang SC', sans-serif" font-size="8.4" font-weight="400" text-anchor="middle" dominant-baseline="central" transform="rotate(0 549 147.2)" fill="#101410">智能语音系统</text>
+<path d="M17,163 L432,163" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="17" cy="163" r="1.45" fill="#101410"/>
+<circle cx="432" cy="163" r="1.45" fill="#101410"/>
+<path d="M9,253 L9,171" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="9" cy="253" r="1.45" fill="#101410"/>
+<circle cx="9" cy="171" r="1.45" fill="#101410"/>
+<path d="M440,253 L440,171" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="440" cy="253" r="1.45" fill="#101410"/>
+<circle cx="440" cy="171" r="1.45" fill="#101410"/>
+<path d="M11,255 L15,259" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="11" cy="255" r="1.25" fill="#101410"/>
+<circle cx="15" cy="259" r="1.25" fill="#101410"/>
+<path d="M11,169 L15,165" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="11" cy="169" r="1.25" fill="#101410"/>
+<circle cx="15" cy="165" r="1.25" fill="#101410"/>
+<path d="M438,255 L434,259" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="438" cy="255" r="1.25" fill="#101410"/>
+<circle cx="434" cy="259" r="1.25" fill="#101410"/>
+<path d="M438,169 L434,165" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="438" cy="169" r="1.25" fill="#101410"/>
+<circle cx="434" cy="165" r="1.25" fill="#101410"/>
+<path d="M17,261 L432,261" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="18" y="215" font-family="'Microsoft YaHei', 'Noto Sans CJK SC', 'PingFang SC', sans-serif" font-size="7.5" font-weight="400" text-anchor="middle" dominant-baseline="central" transform="rotate(90 18 215)" fill="#101410">机械臂控制系统</text>
+<path d="M458,163 L599,163" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="458" cy="163" r="1.45" fill="#101410"/>
+<circle cx="599" cy="163" r="1.45" fill="#101410"/>
+<path d="M450,253 L450,171" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="450" cy="253" r="1.45" fill="#101410"/>
+<circle cx="450" cy="171" r="1.45" fill="#101410"/>
+<path d="M607,253 L607,171" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="607" cy="253" r="1.45" fill="#101410"/>
+<circle cx="607" cy="171" r="1.45" fill="#101410"/>
+<path d="M452,255 L456,259" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="452" cy="255" r="1.25" fill="#101410"/>
+<circle cx="456" cy="259" r="1.25" fill="#101410"/>
+<path d="M452,169 L456,165" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="452" cy="169" r="1.25" fill="#101410"/>
+<circle cx="456" cy="165" r="1.25" fill="#101410"/>
+<path d="M605,255 L601,259" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="605" cy="255" r="1.25" fill="#101410"/>
+<circle cx="601" cy="259" r="1.25" fill="#101410"/>
+<path d="M605,169 L601,165" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="605" cy="169" r="1.25" fill="#101410"/>
+<circle cx="601" cy="165" r="1.25" fill="#101410"/>
+<path d="M458,261 L492.4,261" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M565.6,261 L599,261" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M502.4,260 L506.4,255" fill="none" stroke="#101410" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M499.4,260 L503.4,255" fill="none" stroke="#101410" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M496.4,260 L500.4,255" fill="none" stroke="#101410" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M551.6,260 L555.6,255" fill="none" stroke="#101410" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M554.6,260 L558.6,255" fill="none" stroke="#101410" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M557.6,260 L561.6,255" fill="none" stroke="#101410" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="529" y="257.2" font-family="'Microsoft YaHei', 'Noto Sans CJK SC', 'PingFang SC', sans-serif" font-size="8.4" font-weight="400" text-anchor="middle" dominant-baseline="central" transform="rotate(0 529 257.2)" fill="#101410">输入输出系统</text>
+<text x="474" y="194" font-family="'Microsoft YaHei', 'Noto Sans CJK SC', 'PingFang SC', sans-serif" font-size="5.1" font-weight="400" text-anchor="middle" dominant-baseline="central" transform="rotate(0 474 194)" fill="#101410">机械臂启动</text>
+<circle cx="474" cy="216" r="14.3" fill="none" stroke="#101410" stroke-width=".65"/>
+<text x="504" y="194" font-family="'Microsoft YaHei', 'Noto Sans CJK SC', 'PingFang SC', sans-serif" font-size="5.1" font-weight="400" text-anchor="middle" dominant-baseline="central" transform="rotate(0 504 194)" fill="#101410">云台启动</text>
+<circle cx="504" cy="216" r="14.3" fill="none" stroke="#101410" stroke-width=".65"/>
+<circle cx="534" cy="216" r="14.3" fill="none" stroke="#101410" stroke-width=".65"/>
+<text x="574" y="233" font-family="Arial, sans-serif" font-size="4.6" font-weight="400" text-anchor="middle" dominant-baseline="central" transform="rotate(0 574 233)" fill="#101410">USB</text>
+<text x="604" y="233" font-family="Arial, sans-serif" font-size="4.6" font-weight="400" text-anchor="middle" dominant-baseline="central" transform="rotate(0 604 233)" fill="#101410">LAN</text>
+<rect x="14" y="291" width="116" height="132" rx="8" fill="none" stroke="#101410" stroke-width="1"/>
+<text x="18" y="427" font-family="Arial, sans-serif" font-size="4.2" font-weight="400" text-anchor="middle" dominant-baseline="central" transform="rotate(0 18 427)" fill="#101410">USB</text>
+<path d="M215,276 L600,276" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="215" cy="276" r="1.45" fill="#101410"/>
+<circle cx="600" cy="276" r="1.45" fill="#101410"/>
+<path d="M207,420 L207,284" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="207" cy="420" r="1.45" fill="#101410"/>
+<circle cx="207" cy="284" r="1.45" fill="#101410"/>
+<path d="M608,420 L608,284" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="608" cy="420" r="1.45" fill="#101410"/>
+<circle cx="608" cy="284" r="1.45" fill="#101410"/>
+<path d="M209,422 L213,426" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="209" cy="422" r="1.25" fill="#101410"/>
+<circle cx="213" cy="426" r="1.25" fill="#101410"/>
+<path d="M209,282 L213,278" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="209" cy="282" r="1.25" fill="#101410"/>
+<circle cx="213" cy="278" r="1.25" fill="#101410"/>
+<path d="M606,422 L602,426" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="606" cy="422" r="1.25" fill="#101410"/>
+<circle cx="602" cy="426" r="1.25" fill="#101410"/>
+<path d="M606,282 L602,278" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="606" cy="282" r="1.25" fill="#101410"/>
+<circle cx="602" cy="278" r="1.25" fill="#101410"/>
+<path d="M215,428 L506,428" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M572,428 L600,428" fill="none" stroke="#101410" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M516,427 L520,422" fill="none" stroke="#101410" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M513,427 L517,422" fill="none" stroke="#101410" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M510,427 L514,422" fill="none" stroke="#101410" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M558,427 L562,422" fill="none" stroke="#101410" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M561,427 L565,422" fill="none" stroke="#101410" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M564,427 L568,422" fill="none" stroke="#101410" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="539" y="424.2" font-family="'Microsoft YaHei', 'Noto Sans CJK SC', 'PingFang SC', sans-serif" font-size="8.4" font-weight="400" text-anchor="middle" dominant-baseline="central" transform="rotate(0 539 424.2)" fill="#101410">传感器系统</text>
+<rect x="220" y="287.5" width="82" height="37" rx="3" fill="none" stroke="#101410" stroke-width="0.45"/>
+<text x="261" y="306" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle" dominant-baseline="central" transform="rotate(0 261 306)" fill="#101410">A1</text>
+<rect x="321" y="287.5" width="82" height="37" rx="3" fill="none" stroke="#101410" stroke-width="0.45"/>
+<text x="362" y="306" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle" dominant-baseline="central" transform="rotate(0 362 306)" fill="#101410">A2</text>
+<rect x="422" y="287.5" width="82" height="37" rx="3" fill="none" stroke="#101410" stroke-width="0.45"/>
+<text x="463" y="306" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle" dominant-baseline="central" transform="rotate(0 463 306)" fill="#101410">A3</text>
+<rect x="220" y="337.5" width="82" height="37" rx="3" fill="none" stroke="#101410" stroke-width="0.45"/>
+<text x="261" y="356" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle" dominant-baseline="central" transform="rotate(0 261 356)" fill="#101410">B1</text>
+<rect x="321" y="337.5" width="82" height="37" rx="3" fill="none" stroke="#101410" stroke-width="0.45"/>
+<text x="362" y="356" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle" dominant-baseline="central" transform="rotate(0 362 356)" fill="#101410">B2</text>
+<rect x="422" y="337.5" width="82" height="37" rx="3" fill="none" stroke="#101410" stroke-width="0.45"/>
+<text x="463" y="356" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle" dominant-baseline="central" transform="rotate(0 463 356)" fill="#101410">B3</text>
+<rect x="220" y="387.5" width="82" height="37" rx="3" fill="none" stroke="#101410" stroke-width="0.45"/>
+<text x="261" y="406" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle" dominant-baseline="central" transform="rotate(0 261 406)" fill="#101410">C1</text>
+<rect x="321" y="387.5" width="82" height="37" rx="3" fill="none" stroke="#101410" stroke-width="0.45"/>
+<text x="362" y="406" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle" dominant-baseline="central" transform="rotate(0 362 406)" fill="#101410">C2</text>
+<rect x="422" y="387.5" width="82" height="37" rx="3" fill="none" stroke="#101410" stroke-width="0.45"/>
+<text x="463" y="406" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle" dominant-baseline="central" transform="rotate(0 463 406)" fill="#101410">C3</text>
+<text x="599" y="353" font-family="Arial, sans-serif" font-size="4.2" font-weight="400" text-anchor="middle" dominant-baseline="central" transform="rotate(0 599 353)" fill="#101410">OLED</text>
+<text x="599" y="396" font-family="Arial, sans-serif" font-size="3.8" font-weight="400" text-anchor="middle" dominant-baseline="central" transform="rotate(0 599 396)" fill="#101410">MOTOR</text>
+<rect x="408" y="221" width="22" height="12" rx="1" fill="none" stroke="#101410" stroke-width="0.9"/>
+<path d="M413,233 L416,240 L427,240 L427,247 L433,247" fill="none" stroke="#101410" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="413" cy="227" r="1.2" fill="#101410"/>
+<rect x="428" y="245" width="5" height="4" rx="1" fill="none" stroke="#101410" stroke-width="0.65"/>
+<rect x="371" y="241" width="10" height="10" rx="0" fill="none" stroke="#101410" stroke-width="0.9"/>
+<rect x="420" y="241" width="10" height="10" rx="0" fill="none" stroke="#101410" stroke-width="0.9"/>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="768" viewBox="0 0 1024 768">
+  <!-- Redrawn vector artwork from the reference: no photograph pixels. -->
+  <rect x="3" y="3" width="1018" height="762" rx="22" fill="#121914" stroke="#394339" stroke-width="6"/>
+  <path d="M28 30H994V462L720 500H28Z" fill="#4d9b38"/>
+  <path d="M28 453H704L994 414V448L712 490H28Z" fill="#a1cd70"/>
+  <g fill="#edf3dc">
+    <path d="M58 58H92V120H58ZM108 58H142V120H108ZM158 58H192V120H158Z"/>
+    <path d="M886 355H961V362H886ZM886 377H961V384H886ZM886 399H961V406H886Z"/>
+  </g>
+  <text x="52" y="693" font-family="Arial, sans-serif" font-size="198" font-weight="700" font-style="italic" letter-spacing="-8" fill="#f3f4e9">25KG</text>
+  <path d="M750 626H960M750 645H960" stroke="#c4d3b9" stroke-width="5"/>
+</svg>

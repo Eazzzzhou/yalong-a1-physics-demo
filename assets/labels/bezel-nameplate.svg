@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="192" viewBox="0 0 350 28">
+<!-- Vector lettering and emblem redrawn from reference 07, not photo extraction. -->
+<g fill="none" stroke="#e1e4dd" stroke-width=".8"><rect x="2" y="3" width="22" height="22" rx="1"/></g>
+<path d="M6 21L13 6H18L22 21H17L16 17H11L9 21ZM12 14H16L15 9Z" fill="#e1e4dd"/>
+<path d="M6 19H16M7 17H16M8 15H15" stroke="#161b18" stroke-width=".55"/>
+<text x="33" y="15" dominant-baseline="central" font-family="'Microsoft YaHei','Noto Sans CJK SC','PingFang SC',sans-serif" font-size="18" textLength="300" lengthAdjust="spacingAndGlyphs" fill="#e1e4dd">YL-A1型人工智能实验箱</text>
+</svg>
