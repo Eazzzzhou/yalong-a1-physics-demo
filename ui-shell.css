@@ -1,0 +1,105 @@
+/* Phase 1: structural surfaces. Glass and final styling belong to Phase 3. */
+:root {
+  --ui-inset: 14px; /* User-adjustable inset: 12–16px. */
+  --ui-drawer-left-width: 360px;
+  --ui-drawer-right-width: 332px;
+  --ui-radius: 16px;
+}
+html:has(.ui-shell), body.ui-shell {
+  width: 100%; height: 100dvh; overflow: hidden;
+}
+.demo-view.ui-shell:has(#lesson-panel) > main {
+  position: fixed; inset: 0; width: 100%; height: 100dvh;
+  min-height: 0; margin: 0;
+}
+.demo-view.ui-shell:has(#lesson-panel) #page-materials,
+.demo-view.ui-shell:has(#lesson-panel) .material-layout,
+.demo-view.ui-shell:has(#lesson-panel) .preview-column {
+  height: 100%; min-height: 0; padding: 0; margin: 0;
+}
+.demo-view.ui-shell:has(#lesson-panel) #viewport {
+  position: absolute; inset: 0; width: 100%; height: 100dvh;
+  min-height: 0; max-height: none; border: 0; border-radius: 0;
+}
+.demo-view.ui-shell:has(#lesson-panel) #viewport > canvas { display: block; width: 100%; height: 100%; }
+.ui-shell .ui-edge, .ui-shell .ui-drawer, .ui-shell .ui-status-strip {
+  position: fixed; z-index: 10; background: var(--surface); color: var(--ink);
+}
+.ui-shell .ui-edge {
+  top: var(--ui-inset); min-height: 44px; min-width: 64px;
+  padding: 10px 16px; border: 1px solid var(--edge); border-radius: 10px;
+  font-size: 14px; font-weight: 600;
+}
+.ui-shell .ui-edge-left { left: var(--ui-inset); }
+.ui-shell .ui-edge-right { right: var(--ui-inset); }
+.ui-shell .ui-edge[aria-expanded="true"] { background: var(--accent-dim); color: var(--accent); }
+.ui-shell .ui-drawer {
+  top: calc(var(--ui-inset) + 54px); bottom: 86px;
+  max-width: calc(100vw - 2 * var(--ui-inset)); overflow: auto;
+  overscroll-behavior: contain; border: 1px solid var(--line); border-radius: var(--ui-radius);
+}
+.ui-shell .ui-drawer[hidden], .ui-shell .ui-status-strip [hidden] { display: none; }
+.ui-shell .ui-drawer-left { left: var(--ui-inset); width: var(--ui-drawer-left-width); }
+.ui-shell .ui-drawer-right { right: var(--ui-inset); width: var(--ui-drawer-right-width); padding: 18px; }
+.demo-view.ui-shell:has(#lesson-panel) #lesson-panel {
+  position: relative; inset: auto; width: 100%; max-height: none;
+  padding: 20px 16px; border: 0; overflow: visible; animation: none;
+}
+.demo-view.ui-shell:has(#lesson-panel) #lesson-panel h2 { font-size: 20px; }
+.demo-view.ui-shell:has(#lesson-panel) #lesson-panel .lesson-card { min-height: 58px; font-size: 14px; }
+.demo-view.ui-shell:has(#lesson-panel) #lesson-panel .lesson-cards { grid-template-columns: minmax(0, 1fr); }
+.demo-view.ui-shell:has(#lesson-panel) #lesson-panel .lesson-navigation { gap: 8px; margin-bottom: 20px; }
+.demo-view.ui-shell:has(#lesson-panel) #lesson-panel .lesson-back,
+.demo-view.ui-shell:has(#lesson-panel) #lesson-panel .lesson-select { min-height: 44px; }
+.demo-view.ui-shell:has(#lesson-panel) #lesson-panel .lesson-table { min-width: 0; font-size: 12px; }
+.demo-view.ui-shell:has(#lesson-panel) #lesson-panel .lesson-table :is(th,td) { padding: 9px 3px; }
+.demo-view.ui-shell:has(#lesson-panel) #lesson-panel .lesson-table input { width: 100%; min-width: 46px; min-height: 38px; font-size: 12px; }
+.demo-view.ui-shell:has(#lesson-panel) #lesson-panel .lesson-table tbody th { white-space: normal; }
+.demo-view.ui-shell:has(#lesson-panel) #lesson-panel .lesson-delta { white-space: normal; line-height: 1.5; }
+.demo-view.ui-shell:has(#lesson-panel) #lesson-panel .lesson-description { font-size: 13px; }
+.demo-view.ui-shell:has(#lesson-panel) .demo-brand {
+  height: auto; padding: 0 0 18px; margin-bottom: 18px;
+  gap: 10px; font-size: 16px; letter-spacing: 0; animation: none;
+}
+.demo-view.ui-shell:has(#lesson-panel) .demo-brand span { display: inline; }
+.demo-view.ui-shell:has(#lesson-panel) .viewport-toolbar {
+  display: grid; grid-template-columns: 1fr; height: auto; min-height: 0;
+  padding: 0 0 20px; margin: 0; gap: 10px; animation: none;
+}
+.demo-view.ui-shell:has(#lesson-panel) .motion-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 10px; }
+.demo-view.ui-shell:has(#lesson-panel) .motion-actions button { min-height: 44px; padding: 8px; }
+.demo-view.ui-shell:has(#lesson-panel) #camera-view { width: 100%; max-width: none; min-height: 44px; margin: 0; }
+.ui-shell .viewport-toolbar > label { font-size: 12px; color: var(--muted); }
+.demo-view.ui-shell:has(#lesson-panel) #reset-view { min-height: 44px; }
+.demo-view.ui-shell:has(#lesson-panel) .viewport-label {
+  position: static; display: block; padding: 18px 0 10px; margin: 0;
+  background: none; border-radius: 0; animation: none;
+}
+.demo-view.ui-shell:has(#lesson-panel) .preview-controls {
+  position: static; display: grid; grid-template-columns: minmax(0,1fr); width: 100%; max-width: none;
+  padding: 0; margin: 0; gap: 16px; background: none; border: 0; box-shadow: none; animation: none;
+}
+.demo-view.ui-shell:has(#lesson-panel) .preview-controls > div { grid-column: auto; min-width: 0; }
+.demo-view.ui-shell:has(#lesson-panel) .preview-controls select { width: 100%; min-height: 44px; }
+.demo-view.ui-shell:has(#lesson-panel) .preview-controls input[type="range"] { width: 100%; height: 44px; }
+.ui-shell .ui-capture-actions { margin: 16px 0 20px; }
+.demo-view.ui-shell:has(#lesson-panel) #snapshot { width: 100%; min-height: 44px; text-align: center; }
+.ui-shell .ui-display-actions { display: flex; gap: 12px; padding-top: 16px; border-top: 1px solid var(--line); }
+.ui-shell .ui-display-actions > * { display: inline-flex; align-items: center; justify-content: center; flex: 1; min-height: 44px; font-size: 13px; border: 1px solid var(--line); border-radius: 8px; }
+.ui-shell .ui-status-strip {
+  bottom: var(--ui-inset); left: 50%; transform: translateX(-50%);
+  display: flex; align-items: center; gap: 14px;
+  width: max-content; max-width: calc(100vw - 2 * var(--ui-inset));
+  padding: 6px 8px 6px 16px; border: 1px solid var(--line); border-radius: 12px;
+}
+.demo-view.ui-shell:has(#lesson-panel) #action-status, .ui-shell .ui-lesson-status {
+  position: static; max-width: 66ch; margin: 0; padding: 0; border: 0;
+  background: none; color: var(--ink); font-size: 12px; line-height: 1.6;
+  animation: none; overflow-wrap: anywhere;
+}
+.ui-shell #ui-reset { flex: 0 0 auto; min-width: 60px; min-height: 44px; border-radius: 8px; background: var(--control); font-size: 13px; }
+@media (max-width: 600px) {
+  .ui-shell .ui-drawer { bottom: 110px; }
+  .ui-shell .ui-status-strip { width: calc(100vw - 2 * var(--ui-inset)); }
+  .demo-view.ui-shell:has(#lesson-panel) #lesson-panel { padding: 16px 12px; }
+}

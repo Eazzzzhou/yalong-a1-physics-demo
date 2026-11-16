@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="lesson-panel.css?rev=20261110-dark">
 <link rel="stylesheet" href="demo-release.css?rev=20261110-dark">
 <link rel="stylesheet" href="demo-dark.css?rev=20261110-dark">
+<link rel="stylesheet" href="ui-shell.css?rev=20261116-shell">
 <script type="importmap">{
   "imports": {
     "three": "./vendor/three/build/three.webgpu.js",
@@ -43,7 +44,7 @@
   }
 }</script>
 </head>
-<body class="demo-view">
+<body class="demo-view ui-shell">
 <div class="demo-brand">YL–A1 <span>实验箱</span><a class="quality-link" href="index.html">完整版</a><button id="fullscreen" type="button">全屏</button></div>
 <aside id="lesson-panel" aria-label="关卡"></aside>
 <main aria-label="实验箱演示">
@@ -62,5 +63,6 @@
  </div></div></section>
 </main>
 <select id="model" hidden aria-label="模型"><option value="all">实验箱</option></select><select id="target" hidden aria-label="当前零件"><option value=""></option></select>
+<script src="ui-shell.js?rev=20261116-shell"></script>
 <script src="demo-start.js?rev=20261110-dark"></script>
 </body></html>
