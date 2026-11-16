@@ -1,6 +1,6 @@
 .demo-view:has(#lesson-panel) {
-  --lesson-panel-width: clamp(390px, 38vw, 480px);
-  background: var(--paper);
+  --lesson-panel-width: clamp(440px, 31vw, 460px);
+  background: var(--bg, var(--paper));
 }
 
 .lesson-screen-text {
@@ -17,20 +17,20 @@
 
 .demo-view:has(#lesson-panel) > main {
   min-width: 0;
+  min-height: calc(100dvh - 56px);
   margin-left: var(--lesson-panel-width);
 }
-
 .demo-view #lesson-panel {
   position: fixed;
-  top: 54px;
+  top: 56px;
   bottom: 0;
   left: 0;
   z-index: 5;
   width: var(--lesson-panel-width);
-  padding: 26px 22px;
+  padding: 24px;
   overflow-y: auto;
   overscroll-behavior: contain;
-  background: var(--paper);
+  background: var(--surface, var(--paper));
   color: var(--ink);
   border-right: 1px solid var(--line);
 }
@@ -40,15 +40,18 @@
 }
 
 .demo-view #lesson-panel h2 {
-  margin-bottom: 20px;
-  font-size: 24px;
+  margin-bottom: 18px;
+  font-size: 22px;
+  font-weight: 600;
   line-height: 1.35;
+  letter-spacing: -.2px;
 }
 
 .demo-view #lesson-panel .lesson-eyebrow {
   margin-bottom: 8px;
-  color: var(--green);
+  color: var(--muted);
   font-size: 12px;
+  font-weight: 500;
   letter-spacing: 1px;
 }
 
@@ -60,25 +63,30 @@
 .demo-view #lesson-panel .lesson-card {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 14px;
   min-height: 64px;
   width: 100%;
   padding: 12px 16px;
   border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--white);
+  border-top-color: #3a3f47;
+  border-radius: 10px;
+  background: var(--control, var(--white));
+  color: var(--ink);
   text-align: left;
-  font-weight: 600;
+  font-size: 15px;
+  font-weight: 550;
 }
 
 .demo-view #lesson-panel .lesson-card:not(:disabled):hover {
-  border-color: var(--green);
-  background: var(--mint);
+  border-color: var(--edge);
+  background: var(--hover, var(--mint));
 }
 
 .demo-view #lesson-panel .lesson-card-number {
-  color: var(--green);
+  flex: 0 0 2ch;
+  color: var(--accent, var(--green));
   font-size: 20px;
+  font-weight: 500;
   font-variant-numeric: tabular-nums;
 }
 
@@ -86,45 +94,53 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-bottom: 28px;
+  margin-bottom: 24px;
 }
 
 .demo-view #lesson-panel .lesson-back {
   flex: 0 0 auto;
-  padding: 9px 0;
-  color: var(--green);
+  min-height: 36px;
+  padding: 7px 12px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: transparent;
+  color: var(--muted);
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.demo-view #lesson-panel .lesson-back:not(:disabled):hover {
+  color: var(--ink);
+  background: var(--hover);
 }
 
 .demo-view #lesson-panel .lesson-select {
   flex: 1;
   min-width: 0;
   width: 100%;
-  padding: 9px;
-  border: 1px solid var(--line);
-  border-radius: 5px;
-  color: var(--ink);
-  background: var(--white);
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .demo-view #lesson-panel .lesson-description {
   margin-bottom: 20px;
+  color: var(--muted);
   font-size: 14px;
+  line-height: 1.7;
 }
 
 .demo-view #lesson-panel .lesson-table-scroll {
   width: 100%;
   overflow-x: auto;
   border: 1px solid var(--line);
-  border-radius: 7px;
-  background: var(--white);
+  border-radius: 10px;
+  background: var(--control, var(--white));
 }
 
 .demo-view #lesson-panel .lesson-table {
   width: 100%;
   min-width: 390px;
   border-collapse: collapse;
-  font-size: 12px;
+  font-size: 13px;
   font-variant-numeric: tabular-nums;
 }
 
@@ -137,8 +153,14 @@
 }
 
 .demo-view #lesson-panel .lesson-table thead {
-  background: var(--mint);
-  color: var(--green);
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.demo-view #lesson-panel .lesson-table thead th {
+  padding: 10px 5px;
+  border-bottom: 1px solid var(--line);
 }
 
 .demo-view #lesson-panel .lesson-table tbody th {
@@ -151,52 +173,60 @@
 }
 
 .demo-view #lesson-panel .lesson-table input {
-  width: 76px;
+  width: 78px;
   min-width: 0;
-  padding: 8px 3px;
+  min-height: 36px;
+  padding: 6px 4px;
   border: 1px solid var(--line);
-  border-radius: 4px;
-  background: var(--paper);
+  border-radius: 7px;
+  background: var(--input, var(--paper));
   color: var(--ink);
   text-align: center;
-  font-size: 12px;
+  font-size: 13px;
   font-variant-numeric: tabular-nums;
+}
+
+.demo-view #lesson-panel .lesson-table input:focus-visible {
+  outline: 2px solid var(--accent, var(--green));
+  outline-offset: 1px;
+  border-color: var(--accent, var(--green));
 }
 
 .demo-view #lesson-panel .lesson-delta {
   display: block;
   margin-top: 6px;
-  color: var(--green);
+  color: var(--accent, var(--green));
   font-size: 11px;
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
 
 .demo-view #lesson-panel .lesson-table .is-active {
-  background: var(--mint);
-  box-shadow: inset 3px 0 var(--green);
+  background: var(--accent-dim, var(--mint));
+  box-shadow: inset 2px 0 var(--accent, var(--green));
 }
 
 .demo-view #lesson-panel .lesson-table .is-blocked {
-  background: #fff0e6;
+  background: #382622;
 }
+
 .demo-view #lesson-panel .lesson-table .is-blocked .lesson-delta {
-  color: #8b351e;
+  color: var(--error, #EEA29B);
 }
 
 .demo-view #lesson-panel .lesson-table .is-active input:disabled {
   opacity: 1;
-  color: var(--green);
+  color: var(--accent, var(--green));
 }
 
 .demo-view #lesson-panel input:disabled,
 .demo-view #lesson-panel select:disabled {
-  opacity: .6;
+  opacity: .5;
   cursor: not-allowed;
 }
 
 .demo-view #lesson-panel :focus-visible {
-  outline: 2px solid var(--green);
+  outline: 2px solid var(--accent, var(--green));
   outline-offset: 2px;
 }
 
@@ -211,35 +241,54 @@
   flex: 1;
   min-height: 42px;
   padding: 10px 14px;
-  border: 1px solid var(--green);
-  border-radius: 5px;
-  color: var(--green);
-  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--ink);
+  background: var(--control, var(--white));
+  font-size: 14px;
+  font-weight: 500;
   white-space: nowrap;
 }
 
+.demo-view #lesson-panel .lesson-actions button:not(:disabled):hover {
+  border-color: var(--edge);
+  background: var(--hover);
+}
+
 .demo-view #lesson-panel .lesson-actions .lesson-execute {
-  color: var(--white);
-  background: var(--green);
+  border-color: var(--primary, var(--green));
+  color: var(--on-primary, #15171A);
+  background: var(--primary, var(--green));
+  font-weight: 600;
+}
+
+.demo-view #lesson-panel .lesson-actions .lesson-execute:not(:disabled):hover {
+  border-color: #fff;
+  background: #fff;
 }
 
 .demo-view #lesson-panel .lesson-feedback p {
   margin-bottom: 8px;
   font-size: 13px;
+  line-height: 1.7;
+}
+
+.demo-view #lesson-panel .lesson-status:not(:empty) {
+  color: var(--muted);
 }
 
 .demo-view #lesson-panel .lesson-validation:not([hidden]) {
   display: inline-block;
   padding: 5px 11px;
-  border-radius: 4px;
-  background: var(--mint);
-  color: var(--green);
+  border-radius: 6px;
+  background: var(--accent-dim, var(--mint));
+  color: var(--accent, var(--green));
   font-weight: 600;
 }
 
 .demo-view #lesson-panel .lesson-busy-note {
   margin: 16px 0 0;
-  color: var(--muted);
+  color: var(--warn, var(--muted));
   font-size: 12px;
 }
 
@@ -251,7 +300,7 @@
 .demo-view:has(#lesson-panel) .viewport-toolbar {
   flex-wrap: wrap;
   height: auto;
-  min-height: 64px;
+  min-height: 60px;
   padding: 10px 14px;
 }
 
@@ -260,16 +309,12 @@
 }
 
 .demo-view:has(#lesson-panel) #viewport {
-  height: calc(100dvh - 270px);
-  min-height: 400px;
+  height: calc(100dvh - 200px);
+  min-height: 360px;
 }
 
 .demo-view:has(#lesson-panel) .preview-controls {
-  position: static;
-  width: auto;
-  max-width: none;
-  margin: 12px;
-  grid-template-columns: 1.3fr .8fr 1.3fr;
+  grid-template-columns: minmax(180px, 1.5fr) minmax(120px, 1fr) auto;
 }
 
 .demo-view:has(#lesson-panel) .preview-controls > div {

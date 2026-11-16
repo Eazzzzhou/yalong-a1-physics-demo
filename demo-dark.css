@@ -1,0 +1,201 @@
+:root:has(.demo-view){background:#0D0E10}
+/* YL–A1 深色界面（Linear 黑灰方向）：仅作用于 .demo-view 两个入口页。 */
+.demo-view{
+  --bg:#0D0E10;
+
+
+  --surface:#15171A;
+  --control:#1D2024;
+  --hover:#272B30;
+  --input:#111316;
+  --line:#30343B;
+  --edge:#6F7784;
+  --ink:#F1F2F4;
+  --muted:#A9AFB9;
+  --primary:#E5E8EC;
+  --on-primary:#15171A;
+  --accent:#A8C5CE;
+  --on-accent:#1B2A30;
+  --accent-dim:#253038;
+  --ok:#9DCDB0;
+  --warn:#E1C08A;
+  --error:#EEA29B;
+  /* 复用原有变量名，统一既有规则的取色。 */
+  --paper:var(--bg);
+  --white:var(--control);
+  --green:var(--accent);
+  --mint:var(--accent-dim);
+  /* 手感：较快起动、逐渐减速、一次轻收住。 */
+  --ease-settle:cubic-bezier(.22,.9,.26,1);
+  --ease-press:cubic-bezier(.34,1.56,.64,1);
+  background:var(--bg);
+  color:var(--ink);
+  color-scheme:dark;
+}
+
+/* ---------- 通用控件 ---------- */
+.demo-view button,
+.demo-view select{
+  transition:transform .22s var(--ease-press),background-color .14s,border-color .14s,color .14s,opacity .14s,box-shadow .22s var(--ease-settle);
+}
+.demo-view button:not(:disabled):hover{background-color:var(--hover);filter:none}
+.demo-view button:not(:disabled):active{transform:scale(.985)}
+.demo-view button:disabled{opacity:.5}
+.demo-view button:focus-visible,.demo-view a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.demo-view select:focus-visible,.demo-view input:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.demo-view :focus-visible{outline-color:var(--accent)}
+
+/* ---------- 顶部品牌栏 ---------- */
+.demo-view .demo-brand{
+  height:56px;padding:0 24px;gap:16px;
+  background:var(--surface);color:var(--ink);
+  border-bottom:1px solid var(--line);
+  font-size:16px;font-weight:600;letter-spacing:.5px;
+}
+.demo-view .demo-brand span{font-size:12px;letter-spacing:.5px;color:var(--muted);font-weight:400}
+.demo-view .demo-brand .quality-link{
+  margin-left:auto;display:inline-flex;align-items:center;min-height:36px;
+  padding:6px 12px;border-radius:7px;font-size:13px;font-weight:500;letter-spacing:0;
+  color:var(--muted);
+}
+.demo-view .demo-brand .quality-link:hover{background:var(--hover);color:var(--ink);text-decoration:none}
+.demo-view .demo-brand button{
+  min-height:36px;padding:6px 12px;border-radius:7px;
+  border:1px solid var(--line);background:var(--control);
+  color:var(--muted);font-size:13px;letter-spacing:0;
+}
+.demo-view .demo-brand button:hover{color:var(--ink)}
+
+/* ---------- 视口工具栏 ---------- */
+.demo-view .viewport-toolbar{background:var(--surface);border-bottom:1px solid var(--line)}
+.demo-view:has(#lesson-panel) .viewport-toolbar{min-height:60px;padding:10px 24px}
+.demo-view .viewport-toolbar select,
+.demo-view select{
+  min-height:36px;padding:7px 30px 7px 11px;border:1px solid var(--line);border-radius:7px;
+  background:var(--control) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%23A9AFB9' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat right 10px center;
+  appearance:none;-webkit-appearance:none;
+  color:var(--ink);font-size:12px;
+}
+.demo-view select:hover{border-color:var(--edge)}
+.demo-view .motion-actions button{
+  min-height:36px;padding:7px 12px;border:1px solid var(--line);border-radius:7px;
+  background:var(--control);color:var(--ink);font-size:12px;font-weight:500;
+}
+.demo-view .motion-actions #reset{background:var(--control);color:var(--muted)}
+.demo-view .motion-actions button:hover{border-color:var(--edge)}
+.demo-view .viewport-toolbar .quiet,
+.demo-view #reset-view{
+  min-height:36px;padding:7px 12px;border:1px solid var(--line);border-radius:7px;
+  background:transparent;color:var(--muted);font-size:12px;
+}
+.demo-view #reset-view:hover{color:var(--ink)}
+
+/* ---------- 视口浮层 ---------- */
+.demo-view #viewport{background:#101214}
+.demo-view #action-status{
+  top:14px;right:14px;max-width:55%;
+  padding:9px 13px;border:1px solid var(--line);border-radius:8px;
+  background:#15171ae6;color:var(--ink);font-size:12px;
+}
+.demo-view .viewport-label{
+  top:14px;left:14px;padding:7px 10px;border-radius:7px;
+  background:#15171ada;color:var(--muted);font-size:12px;
+}
+.demo-view .loading{padding:24px;align-content:center;gap:12px;text-align:center;
+  background:#0d0e10e0;color:var(--muted);font-size:13px}
+.demo-view .render-recovery{
+  display:block;margin:12px auto 0;padding:10px 16px;width:max-content;
+  border-radius:7px;background:var(--primary);color:var(--on-primary);font-weight:600;
+}
+.demo-view .selection-indicator{
+  top:46px;left:14px;padding:8px 11px;border:1px solid var(--warn);border-radius:7px;
+  background:#15171ae8;color:var(--warn);font-size:11px;
+}
+.demo-view .selection-callout{
+  padding:10px 16px;border:1px solid var(--edge);border-radius:9px;
+  background:#15171af0;color:var(--ink);font-size:13px;
+  box-shadow:0 6px 24px #0009;
+}
+.demo-view .selection-leader path{stroke:var(--accent)}
+.demo-view .selection-leader circle{fill:var(--surface);stroke:var(--accent)}
+.demo-view .precision-status{background:#15171ae0;color:var(--muted);border:1px solid var(--line);border-radius:7px}
+.demo-view .realtime-badge{background:var(--accent-dim);color:var(--accent)}
+
+/* ---------- 底部场景控制 ---------- */
+.demo-view .preview-controls{
+  padding:12px 14px;border:1px solid var(--line);border-radius:10px;
+  background:#15171af0;box-shadow:0 8px 30px #00000059;
+}
+.demo-view .preview-controls label{color:var(--muted);font-size:12px}
+.demo-view .preview-controls select{background-color:var(--input)}
+.demo-view .preview-controls input[type=range]{
+  -webkit-appearance:none;appearance:none;
+  height:26px;margin:2px 0 0;background:transparent;cursor:pointer;
+}
+.demo-view .preview-controls input[type=range]::-webkit-slider-runnable-track{
+  height:4px;border-radius:2px;background:var(--hover);border:1px solid var(--line);
+}
+.demo-view .preview-controls input[type=range]::-webkit-slider-thumb{
+  -webkit-appearance:none;appearance:none;
+  width:16px;height:16px;margin-top:-7px;border-radius:50%;
+  background:var(--primary);border:1px solid #8a919c;
+  transition:transform .18s var(--ease-press),box-shadow .18s;
+}
+.demo-view .preview-controls input[type=range]:active::-webkit-slider-thumb{transform:scale(1.18)}
+.demo-view .preview-controls input[type=range]:focus-visible{outline:2px solid var(--accent);outline-offset:4px;border-radius:6px}
+.demo-view .preview-controls input[type=range]::-moz-range-track{height:4px;border-radius:2px;background:var(--hover);border:1px solid var(--line)}
+.demo-view .preview-controls input[type=range]::-moz-range-thumb{width:15px;height:15px;border-radius:50%;background:var(--primary);border:1px solid #8a919c}
+.demo-view #snapshot{
+  min-height:40px;padding:7px 14px;border:1px solid var(--line);border-radius:7px;
+  background:transparent;color:var(--muted);font-size:12px;
+}
+.demo-view #snapshot:hover{color:var(--ink)}
+.demo-view #environment-source{font-size:11px;color:var(--muted);text-decoration:underline}
+.demo-view #environment-source:hover{color:var(--ink)}
+
+/* ---------- 关卡面板叠层 ---------- */
+.demo-view #lesson-panel .lesson-stage{display:grid;position:relative}
+.demo-view #lesson-panel .lesson-stage>.lesson-picker,
+.demo-view #lesson-panel .lesson-stage>.lesson-task{grid-area:1/1;min-width:0}
+.demo-view #lesson-panel .lesson-layer{
+  background:var(--surface);
+  transform-origin:50% 24px;
+}
+.demo-view #lesson-panel .lesson-stage>section:not(.lesson-ghost),
+.demo-view #lesson-panel .lesson-task-body:not(.lesson-ghost){position:relative;z-index:1}
+.demo-view #lesson-panel .lesson-ghost{
+  position:absolute;inset:0;z-index:0;height:100%;overflow:hidden;
+  pointer-events:none;user-select:none;
+}
+.demo-view #lesson-panel .lesson-task-body.lesson-ghost{position:absolute;left:0;right:0;top:0;height:auto;overflow:visible}
+.demo-view #lesson-panel .lesson-ghost *{pointer-events:none!important}
+
+/* ---------- 首次进入分层入场 ---------- */
+@keyframes lesson-rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:no-preference){
+  .demo-view .demo-brand{animation:lesson-rise .44s var(--ease-settle) both}
+  .demo-view #lesson-panel{animation:lesson-rise .5s var(--ease-settle) .05s both}
+  .demo-view .viewport-toolbar{animation:lesson-rise .5s var(--ease-settle) .1s both}
+  .demo-view .preview-controls{animation:lesson-rise .5s var(--ease-settle) .16s both}
+  .demo-view .viewport-label{animation:lesson-rise .5s var(--ease-settle) .2s both}
+  .demo-view #action-status{animation:lesson-rise .5s var(--ease-settle) .2s both}
+}
+
+/* ---------- 减少动态效果：取消位移与入场，保留状态/按压反馈 ---------- */
+@media (prefers-reduced-motion:reduce){
+  .demo-view .demo-brand,.demo-view #lesson-panel,.demo-view .viewport-toolbar,
+  .demo-view .preview-controls,.demo-view .viewport-label,.demo-view #action-status{animation:none}
+}
+
+/* ---------- 滚动条 ---------- */
+.demo-view ::-webkit-scrollbar{width:10px;height:10px}
+.demo-view ::-webkit-scrollbar-thumb{background:var(--hover);border:3px solid var(--surface);border-radius:6px}
+.demo-view ::-webkit-scrollbar-thumb:hover{background:var(--edge)}
+.demo-view ::-webkit-scrollbar-track{background:transparent}
+.demo-view *{scrollbar-width:thin;scrollbar-color:var(--hover) transparent}
+
+/* ---------- 小屏 ---------- */
+@media (max-width:500px){
+  .demo-view .demo-brand{gap:10px;padding:0 14px}
+  .demo-view .demo-brand span{display:none}
+}
