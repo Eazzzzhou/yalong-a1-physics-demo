@@ -11,7 +11,7 @@ export function photographicEnvironments(renderer){
  const cache=new Map();
  return async function load(id){
   const preset=photographicPresets[id];
-  if(!cache.has(id))cache.set(id,new HDRLoader().loadAsync(`./assets/environments/${preset.asset}_${lightweight?'1k':'4k'}.hdr`).then(hdr=>{
+  if(!cache.has(id))cache.set(id,new HDRLoader().loadAsync(`./assets/environments/${preset.asset}_${lightweight?'1k':'4k'}.hdr`,window.demoLoading.progress).then(hdr=>{
    hdr.mapping=T.EquirectangularReflectionMapping;
    const pmrem=new T.PMREMGenerator(renderer),reflection=pmrem.fromEquirectangular(hdr);pmrem.dispose();
    return {...preset,hdr,reflection,source:`https://polyhaven.com/a/${preset.asset}`};

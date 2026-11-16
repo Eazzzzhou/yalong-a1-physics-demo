@@ -1,7 +1,15 @@
 .demo-view:has(#lesson-panel) .preview-controls{grid-template-columns:minmax(180px,1.5fr) minmax(120px,1fr) auto}
 .demo-view #snapshot{min-height:40px;color:var(--green)}
 .demo-view #environment-source{font-size:11px;text-decoration:underline}
-.demo-view .loading{padding:24px;text-align:center;align-content:center;gap:12px;color:#315844}
+.demo-view .loading{padding:24px;text-align:center;align-content:safe center;gap:12px;color:#315844;background:#e5e7df;overflow:auto;overflow-wrap:anywhere;z-index:5}
+.demo-view .loading p{margin:0;max-width:65ch}
+.demo-view .loading-preview{margin:0;width:min(720px,100%)}
+.demo-view .loading-preview video{display:block;width:100%;max-height:38vh;object-fit:contain;background:#d4d8cb}
+.demo-view .loading-preview figcaption{margin-top:6px}
+.demo-view .loading nav{display:flex;flex-wrap:wrap;justify-content:center;gap:4px}
+.demo-view .loading a,.demo-view .loading summary{display:inline-block;min-height:44px;padding:10px;text-decoration:underline;cursor:pointer}
+.demo-view .loading details{width:min(720px,100%)}
+.demo-view .loading pre{font:inherit;text-align:left;white-space:pre-wrap;margin:0}
 .demo-view .preview-controls input[type=range]{height:30px;margin:0}
 .demo-view #camera-view{min-height:36px}
 .demo-view .motion-actions button{min-height:36px}

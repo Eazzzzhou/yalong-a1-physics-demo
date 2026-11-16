@@ -4,11 +4,11 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>亚龙实验箱 · 轻量版</title>
 <link rel="icon" href="data:,">
-<link rel="stylesheet" href="style.css?rev=20261110-physics">
-<link rel="stylesheet" href="preview-layout.css?rev=20261110-physics">
-<link rel="stylesheet" href="demo.css?rev=20261110-physics">
-<link rel="stylesheet" href="lesson-panel.css?rev=20261110-physics">
-<link rel="stylesheet" href="demo-release.css?rev=20261110-physics">
+<link rel="stylesheet" href="style.css?rev=20261116-compatible">
+<link rel="stylesheet" href="preview-layout.css?rev=20261116-compatible">
+<link rel="stylesheet" href="demo.css?rev=20261116-compatible">
+<link rel="stylesheet" href="lesson-panel.css?rev=20261116-compatible">
+<link rel="stylesheet" href="demo-release.css?rev=20261116-compatible">
 <script type="importmap">{
   "imports": {
     "three": "./vendor/three/build/three.webgpu.js",
@@ -16,29 +16,29 @@
     "three/tsl": "./vendor/three/build/three.tsl.js",
     "three/addons/": "./vendor/three/examples/jsm/",
     "three/examples/jsm/": "./vendor/three/examples/jsm/",
-    "./angle-map.js": "./angle-map.js?rev=20261110-physics",
-    "./button-detail.js": "./button-detail.js?rev=20261110-physics",
-    "./demo-app.js": "./demo-app.js?rev=20261110-physics",
-    "./explode-preview.js": "./explode-preview.js?rev=20261110-physics",
-    "./finish-calibration.js": "./finish-calibration.js?rev=20261110-physics",
-    "./laboratory-stage.js": "./laboratory-stage.js?rev=20261110-physics",
-    "./lesson-panel.js": "./lesson-panel.js?rev=20261110-physics",
-    "./lesson-program.js": "./lesson-program.js?rev=20261110-physics",
-    "./lesson-runner.js": "./lesson-runner.js?rev=20261110-physics",
-    "./lesson-screen.js": "./lesson-screen.js?rev=20261110-physics",
-    "./levels.js": "./levels.js?rev=20261110-physics",
-    "./panel-art.js": "./panel-art.js?rev=20261110-physics",
-    "./part-labels.js": "./part-labels.js?rev=20261110-physics",
-    "./photographic-environments.js": "./photographic-environments.js?rev=20261110-physics",
-    "./render-mode.js": "./render-mode.js?rev=20261110-physics",
-    "./selection-indicator.js": "./selection-indicator.js?rev=20261110-physics",
-    "./self-occlusion.js": "./self-occlusion.js?rev=20261110-physics",
-    "./servo-labels.js": "./servo-labels.js?rev=20261110-physics",
-    "./studio-post.js": "./studio-post.js?rev=20261110-physics",
-    "./studio-stage.js": "./studio-stage.js?rev=20261110-physics",
-    "./surface-detail.js": "./surface-detail.js?rev=20261110-physics",
-    "./teaching-bundle.js": "./teaching-bundle.js?rev=20261110-physics",
-    "./wood-texture.js": "./wood-texture.js?rev=20261110-physics"
+    "./angle-map.js": "./angle-map.js?rev=20261116-compatible",
+    "./button-detail.js": "./button-detail.js?rev=20261116-compatible",
+    "./demo-app.js": "./demo-app.js?rev=20261116-compatible",
+    "./explode-preview.js": "./explode-preview.js?rev=20261116-compatible",
+    "./finish-calibration.js": "./finish-calibration.js?rev=20261116-compatible",
+    "./laboratory-stage.js": "./laboratory-stage.js?rev=20261116-compatible",
+    "./lesson-panel.js": "./lesson-panel.js?rev=20261116-compatible",
+    "./lesson-program.js": "./lesson-program.js?rev=20261116-compatible",
+    "./lesson-runner.js": "./lesson-runner.js?rev=20261116-compatible",
+    "./lesson-screen.js": "./lesson-screen.js?rev=20261116-compatible",
+    "./levels.js": "./levels.js?rev=20261116-compatible",
+    "./panel-art.js": "./panel-art.js?rev=20261116-compatible",
+    "./part-labels.js": "./part-labels.js?rev=20261116-compatible",
+    "./photographic-environments.js": "./photographic-environments.js?rev=20261116-compatible",
+    "./render-mode.js": "./render-mode.js?rev=20261116-compatible",
+    "./selection-indicator.js": "./selection-indicator.js?rev=20261116-compatible",
+    "./self-occlusion.js": "./self-occlusion.js?rev=20261116-compatible",
+    "./servo-labels.js": "./servo-labels.js?rev=20261116-compatible",
+    "./studio-post.js": "./studio-post.js?rev=20261116-compatible",
+    "./studio-stage.js": "./studio-stage.js?rev=20261116-compatible",
+    "./surface-detail.js": "./surface-detail.js?rev=20261116-compatible",
+    "./teaching-bundle.js": "./teaching-bundle.js?rev=20261116-compatible",
+    "./wood-texture.js": "./wood-texture.js?rev=20261116-compatible"
   }
 }</script>
 </head>
@@ -52,14 +52,46 @@
    <select id="camera-view" aria-label="演示视角" disabled><option value="teaching">教学 · 屏幕与机械臂</option><option value="wide">远景 · 整箱</option><option value="medium">中景 · 功能动作</option><option value="close">近景 · 材质细节</option><option value="detail">材质近景</option><option value="arm">机械臂</option><option value="gimbal">云台</option><option value="top">俯视</option><option value="all">整箱</option></select>
    <button id="reset-view" class="quiet" disabled>重置视角</button>
   </div>
-  <div id="viewport"><div id="action-status" role="status" aria-live="polite">正在加载演示动作…</div><div class="viewport-label">实拍铸造车间</div><div id="loading" class="loading" role="status">正在准备实验箱…</div></div>
+  <div id="viewport"><div id="action-status" role="status" aria-live="polite">正在加载演示动作…</div><div class="viewport-label">实拍铸造车间</div><div id="loading" class="loading">
+   <p id="loading-status" role="status">正在准备实验箱…</p>
+   <figure class="loading-preview"><video id="loading-preview" controls preload="none" playsinline poster="./assets/demo-preview.jpg" aria-label="实验箱动作演示录屏"><source src="./assets/demo-preview.mp4" type="video/mp4">浏览器不支持播放视频，请使用下方下载链接。</video><figcaption>演示录屏 · 非实时三维</figcaption></figure>
+   <details id="loading-details" hidden><summary>错误详情</summary><pre id="loading-error"></pre></details>
+   <nav aria-label="加载帮助"><a href="lite.html">重新加载</a><a href="./assets/demo-preview.jpg" target="_blank" rel="noopener">查看效果图</a><a href="./assets/demo-preview.mp4" download>下载演示视频</a></nav>
+   <noscript><style>#loading-status,#action-status{display:none}</style><p>浏览器未启用 JavaScript，实时三维无法启动。请启用后重新加载，或播放上方演示视频。</p></noscript>
+  </div></div>
   <div class="preview-controls">
-   <div><label for="environment">场景与光照 <a id="environment-source" href="https://polyhaven.com/a/industrial_workshop_foundry" target="_blank" rel="noopener">Poly Haven</a></label><select id="environment"><option value="foundry">实拍铸造车间 · 金属反射</option><option value="workshop">实拍车间 · 大窗日光</option><option value="metalStudio">实拍摄影棚 · 柔光箱反射</option><option value="light">中性柔光棚</option><option value="dark">深灰摄影棚 · 轮廓光</option><option value="warm">暖色摄影棚</option></select></div>
-   <div><label for="environment-rotation">光线方向 <output id="environment-angle">0°</output></label><input id="environment-rotation" type="range" min="0" max="360" step="1" value="0"></div>
+   <div><label for="environment">场景与光照 <a id="environment-source" href="https://polyhaven.com/a/industrial_workshop_foundry" target="_blank" rel="noopener">Poly Haven</a></label><select id="environment" disabled><option value="foundry">实拍铸造车间 · 金属反射</option><option value="workshop">实拍车间 · 大窗日光</option><option value="metalStudio">实拍摄影棚 · 柔光箱反射</option><option value="light">中性柔光棚</option><option value="dark">深灰摄影棚 · 轮廓光</option><option value="warm">暖色摄影棚</option></select></div>
+   <div><label for="environment-rotation">光线方向 <output id="environment-angle">0°</output></label><input id="environment-rotation" disabled type="range" min="0" max="360" step="1" value="0"></div>
    <button id="snapshot" type="button" class="quiet" disabled>保存画面</button>
   </div>
  </div></div></section>
 </main>
 <select id="model" hidden aria-label="模型"><option value="all">实验箱</option></select><select id="target" hidden aria-label="当前零件"><option value=""></option></select>
-<script src="demo-start.js?rev=20261110-physics"></script>
+<script>
+(function () {
+ var timer;
+ var boot = window.demoBootstrap = {
+  failed: false,
+  cancel: function () { clearTimeout(timer); },
+  fail: function (message) {
+   boot.failed = true;
+   boot.cancel();
+   var status = document.getElementById('loading-status');
+   status.setAttribute('role', 'alert');
+   status.textContent = message;
+   document.getElementById('loading').classList.remove('hidden');
+   document.getElementById('action-status').textContent = '实时三维不可用，可观看演示视频';
+  }
+ };
+ if (!HTMLScriptElement.supports || !HTMLScriptElement.supports('importmap')) {
+  boot.fail('当前浏览器版本不支持三维模块加载。请更新浏览器后重试，或播放演示视频。');
+  return;
+ }
+ timer = setTimeout(function () { boot.fail('启动脚本连续 180 秒未能就绪。请检查网络后重新加载，或播放演示视频。'); }, 180000);
+ var script = document.createElement('script');
+ script.src = './demo-start.js?rev=20261116-compatible';
+ script.onerror = function () { boot.fail('启动脚本下载失败。请检查网络后重新加载。请求：' + script.src); };
+ document.body.appendChild(script);
+})();
+</script>
 </body></html>

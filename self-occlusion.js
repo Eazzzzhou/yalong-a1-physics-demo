@@ -3,7 +3,7 @@ import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 
 let bakedParts;
 export async function applySelfOcclusion(meshes){
- if(!bakedParts)bakedParts=new GLTFLoader().loadAsync('./assets/equipment-self-ao.glb').then(gltf=>{
+ if(!bakedParts)bakedParts=new GLTFLoader().loadAsync('./assets/equipment-self-ao.glb',window.demoLoading.progress).then(gltf=>{
   const parts=new Map();gltf.scene.traverse(mesh=>{if(mesh.isMesh)parts.set(mesh.name,mesh);});return parts;
  });
  const parts=await bakedParts;

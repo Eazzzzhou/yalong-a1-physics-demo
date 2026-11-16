@@ -2,7 +2,7 @@ name: Deploy GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches: [main, diagnose/production-loading]
   workflow_dispatch:
 
 permissions:
@@ -22,9 +22,29 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          path: candidate
+      - uses: actions/checkout@v4
+        if: github.ref_name != 'main'
+        with:
+          ref: main
+          path: production
+      - name: Prepare production and branch preview
+        shell: bash
+        run: |
+          set -euo pipefail
+          site="$RUNNER_TEMP/pages-site"
+          mkdir -p "$site"
+          if [ "$GITHUB_REF_NAME" = "main" ]; then
+            git -C candidate archive HEAD | tar -x -C "$site"
+          else
+            git -C production archive HEAD | tar -x -C "$site"
+            mkdir -p "$site/preview/loading-fix"
+            git -C candidate archive HEAD | tar -x -C "$site/preview/loading-fix"
+          fi
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: ${{ runner.temp }}/pages-site
       - id: deployment
         uses: actions/deploy-pages@v4
